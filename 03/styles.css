@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+/* logo style */
+.logo{
+    top: 10%;
+    left: 50%;
+    width: 300px;
+    height: auto;
+}
+/* Header styles */
+header {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+/* Header styles for h6 */
+header h6 {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+/* styling for cast class */
+.cast ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    color: orange;
+}
+
+.cast li {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Main section styles */
+main {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+/* Main section styles for h3 */
+main h3 {
+    font-size: 0.8em;
+    margin: 0;
+}
+/* Main section styles for h6*/
+main h6{
+    font-size: 0.2em;
+    margin: 0;
+}
+/* style for title of the poster */
+.title h1 {
+    font-size: 5em;
+    margin: 0;
+    font-family: 'Odibee Sans', cursive;
+    font-weight: bold;
+    color:orange;
+}
+
+/* Footer styles */
+footer {
+    position: absolute;
+    bottom: -22%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 5px 4px #000;
+}
+
+footer h2,h3,h4,h5,h6{
+    margin: 0;
+}
+/* Footer styles for h2 */
+footer h2 {
+    font-size: 1.5em;
+    color: orange;
+}
+/* Footer styles for h3 */
+footer h3 {
+    font-size: 1em;
+    margin: 3px;
+}
+/* Footer styles for h4 */
+footer h4{
+    font-size: 0.8em;
+    color: yellow;
+}
+/* Footer styles for h5 */
+footer h5 {
+    font-size: 0.5em;
+}
+/* Footer styles for h6 */
+footer h6{
+    font-size: 0.2em;
+}
+/* link styles */
+.links {
+    position: absolute;
+    bottom: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
