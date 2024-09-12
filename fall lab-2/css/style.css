@@ -1,0 +1,24 @@
+/** Step two **/
+h1,h2,h3{
+    font-family: "Calistoga",serif;
+}
+/** Step three **/
+h1{
+    font-size: 46px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: yellow;
+}
+/** Step four **/
+p,a,ul,li{
+  font-family: "Protest Guerrilla",sans-serif;
+}
+/** Step five **/
+p span{
+    color: #00ffff;
+}
+/** Step six **/
+h3{
+    font-size: 2em;
+    text-shadow: 3px 4px 2px rgba(0,0,0,.5);
+}
