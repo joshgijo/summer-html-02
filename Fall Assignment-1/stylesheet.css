@@ -1,0 +1,90 @@
+/* General styling for the body with background image */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background: url('cover.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire background */
+}
+
+/* Add a semi-transparent overlay to improve readability */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
+}
+
+/* Styling the header */
+header {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); /* Adds a translucent background to make text readable */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+}
+
+/* Styling for the main content (lyrics) */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the lyrics text */
+main p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+main > section > h2{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    text-align: center;
+}
+/* Style for embedded video */
+iframe {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent footer background */
+    color: white;
+    margin-top: 20px;
+}
+
+/* Ensuring images scale properly within the layout */
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
