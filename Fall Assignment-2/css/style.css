@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@300;500;700&family=Sevillana&family=Bungee+Inline&family=Edu+Australia+VIC+WA+NT+Hand+Precursive:wght@400;700&family=Baskervville&display=swap');
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Text */
+body {
+    font-family: "Doto", serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #fdf9f3;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffe8e8;
+}
+
+.logo {
+    font-family: "Sevillana", serif;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a {
+    font-family:  "Bungee Tint", serif;
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+.hero h1 {
+    font-family: 'Edu AU VIC WA NT Pre', serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.hero p {
+    font-family: "Baskervville SC", serif;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+section p,
+section ul li {
+    font-family: "Baskervville SC", serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+}
+
+/* Section Images */
+section img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Container for Hero Section */
+.hero img {
+    max-width: 300px;
+    width: 80%;
+    margin-top: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-logo {
+    font-family: "Sevillana", serif;
+    font-size: 1.5rem;
+}
+
+footer form label,
+footer form input,
+footer form textarea {
+    font-family: "Baskervville SC", serif;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+footer form input,
+footer form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #444;
+    border: none;
+    color: #fff;
+}
+
+footer form button {
+    font-family:  "Bungee Tint", serif;
+    padding: 10px 15px;
+    background-color: #f4a3a7;
+    border: none;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Responsive Adjustments for Images */
+    .hero img,
+    section img {
+        max-width: 100%;
+        width: 90%;
+    }
+}
