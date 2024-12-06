@@ -1,0 +1,576 @@
+/* Hero Section */
+.hero {
+    color: #333333;
+    text-align: center;
+    padding: 4rem 2rem;
+    position: relative; /* Required for pseudo-element positioning */
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background.jpg'); /* Update the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* Adjust the opacity of the background image */
+    z-index: -2; /* Places the background behind the overlay and content */
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay (black) */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+.hero .hero-content {
+    position: relative; /* Ensures content appears above the overlay and background */
+    color: #ffffff; /* White text color for better contrast */
+}
+
+.hero .hero-content h1 {
+    font-family:  "Bungee Tint", serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .hero-content p {
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero .btn-primary {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-primary:hover {
+    background-color: #cc7a00;
+}
+
+.shop-now {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Store Details Section */
+.store-details {
+    padding: 2rem;
+    background: linear-gradient(135deg, #ffffff, #eaeaea);
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-details:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.store-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+    font-family: "Baskervville SC", serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.store-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #666;
+    line-height: 1.6;
+    font-family: "Sevillana", serif;
+}
+
+.store-details address {
+    font-style: normal;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.store-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.store-details ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #555;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.store-details ul li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #ff7e5f;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.store-details a {
+    text-decoration: none;
+    color: #ff7e5f;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.store-details a:hover {
+    color: #feb47b;
+}
+
+/* About the Shop Section */
+.about-shop {
+    padding: 3rem 2rem;
+    background: url('../images/about_bg.jpg') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    position: relative; /* For the overlay */
+    color: #fff; /* White text for contrast */
+    overflow: hidden; /* Ensures the pseudo-element doesn't overflow */
+}
+
+.about-shop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Places the overlay behind the content */
+}
+
+.about-shop h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    font-family: 'Edu AU VIC WA NT Pre', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-shop p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 1.5rem;
+}
+
+/* Featured Products Section */
+.shop-products h1{
+    font-size: 3rem; /* Bigger font size */
+    font-family:  "Bungee Tint", serif;
+    font-weight: 700; /* Make the font bold */
+    color: #ff9900; /* Choose a bright color for emphasis */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Increase letter spacing for effect */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out; /* Animation for a smoother appearance */
+}
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    background-color: #fff;
+    padding: 1.5rem;
+    margin: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.view-product {
+    display: inline-flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.view-product:hover {
+    background-color: #555;
+}
+
+.view-product svg {
+    margin-left: 8px;
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.view-product:hover svg {
+    transform: rotate(180deg);
+}
+
+/* About Section */
+.about-us {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.learn-more {
+    background-color: #333;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.learn-more:hover {
+    background-color: #555;
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    font-size: 2rem;
+    font-family: 'Edu AU VIC WA NT Pre', serif;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    font-family: "Baskervville SC", serif;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #ff9900;
+    font-family: "Edu AU VIC WA NT Arrows", serif;
+    color: #fff;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #cc7a00;
+}
+
+.contact-details {
+    margin-top: 1rem;
+}
+
+.contact-details h3 {
+    font-size: 1.5rem;
+    font-family:  "Bungee Tint", serif;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-details p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-details a {
+    color: #ff9900;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+/* Product Detail Section */
+.product-detail {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-images {
+    flex: 1;
+    max-width: 500px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail-images {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.thumbnail {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.product-info {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #ff9900;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.features li {
+    margin-bottom: 0.5rem;
+}
+
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #ff9900;
+}
+
+.btn-primary:hover {
+    background-color: #cc7a00;
+}
+
+.btn-secondary {
+    background-color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+/* Global Header Styling */
+.navbar .photo img {
+    height: 150px; /* Adjust height as needed */
+    width: auto;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar .logo {
+    font-size: 2em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links li {
+    margin: 0;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff9900;
+}
+
+/* Global Footer Styling */
+.footer-content {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 2rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-content .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-content .social-links li {
+    margin: 0;
+}
+
+.footer-content .social-links a {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.footer-content .social-links img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
